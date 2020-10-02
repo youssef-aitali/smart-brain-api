@@ -1,0 +1,1 @@
+The backend of a face detection application using Clarifai API.
