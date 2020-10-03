@@ -9,8 +9,11 @@ const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
 const db = knex({
-  client: 'pg',
-  connection: process.env.PG_CONNECTION_STRING,
+  client: 'postgres',
+  connection: {
+    host : 'postgresql-elliptical-86412',
+    ssl: true
+  }
 });
 
 const app = express();
