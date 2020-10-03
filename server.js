@@ -12,7 +12,7 @@ const image = require('./controllers/image');
 const db = knex({
   client: 'pg',
   connection: {
-    connectionString : 'postgresql-elliptical-86412',
+    connectionString : process.env.DATABASE_URL,
     ssl: true
   }
 });
